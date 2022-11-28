@@ -1,0 +1,23 @@
+// Utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+// Base styles
+@import './base/base';
+@import './base/reset';
+@import './base/card-set';
+
+// Components styles
+@import './components/header';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/hero';
+@import './components/features';
+@import './components/work';
+@import './components/team';
+@import './components/customers';
+@import './components/footer';
+@import './components/portfolio';
+@import './components/modal-window';

@@ -1,0 +1,30 @@
+:root {
+  /* Text colors */
+  --primari-text-color: #212121;
+  --secondary-text-color: #757575;
+  --adress-footer-color: rgba(255, 255, 255, 0.6);
+  --logo-black-color: #000000;
+
+  --primari-white-color: #ffffff;
+
+  /* BG colors */
+
+  --bgd-white-color: #f5f4fa;
+  --hero-bgc: #c4c4c4;
+  --bgd-color-footer: #2f303a;
+
+  /* Accent colors */
+
+  --accent-color: #2196f3;
+  --hero-button-activ: #188ce8;
+  --main-svg-color: #afb1b8;
+
+  /* Others */
+  --indent: 30px;
+  --items: 3;
+
+  --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --modal-idx: 10;
+  --menu-idx: 100;
+}

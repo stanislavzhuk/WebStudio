@@ -1,0 +1,23 @@
+header {
+  background-color: var(--primari-white-color);
+}
+
+// Logo
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+
+  color: var(--accent-color);
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__logo--black {
+  color: var(--logo-black-color);
+}

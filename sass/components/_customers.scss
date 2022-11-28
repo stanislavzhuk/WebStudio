@@ -1,0 +1,35 @@
+.customers{
+  @include section;
+}
+
+.customers__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--main-svg-color);
+  border-radius: 4px;
+
+  color: var(--main-svg-color);
+  transition: color var(--anim-fast), border-color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+
+.customers__icon {
+  fill: currentColor;
+}

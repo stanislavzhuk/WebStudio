@@ -1,0 +1,38 @@
+.features {
+  @include section(94px, 0);
+  background-color: var(--primari-white-color);
+}
+
+.features__list {
+  --items: 4;
+}
+
+.features__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--bgd-white-color);
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__text {
+  width: 270px;
+
+  line-height: 1.7;
+
+  color: var(--secondary-text-color);
+}
