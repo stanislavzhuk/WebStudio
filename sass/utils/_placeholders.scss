@@ -20,3 +20,13 @@
     background-color: var(--hero-button-activ);
   }
 }
+
+%call-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: calc(16 / 14);
+
+  color: var(--primari-white-color);
+}

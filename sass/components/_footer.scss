@@ -5,22 +5,38 @@ footer {
 }
 
 .container__footer {
-  display: flex;
-  align-items: baseline;
+  @include section;
 
-  padding-top: 50px;
-  padding-bottom: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 // Logo and address
 
 .container__address {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .footer__logo--white {
@@ -29,7 +45,7 @@ footer {
 
 .address__text {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 
   font-style: normal;
   line-height: calc(24 / 14);
@@ -53,25 +69,24 @@ footer {
 
 .address__link--mail {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 // Join
 
 .join__text {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: calc(16 / 14);
-
-  color: var(--primari-white-color);
+  @extend %call-text;
 }
 
 .join__list {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .join__link {
@@ -100,29 +115,25 @@ footer {
 // Subscription
 
 .container__subscription {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscription__text {
-  display: inline-block;
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primari-white-color);
+  @extend %call-text;
 }
 
 .subscription__form {
+  @media screen and (min-width: 1200px) {
   display: flex;
-  gap: 12px;
+  gap: 12px;  }
 }
 
 .subscription__field {
+  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   font-size: 16px;
@@ -146,12 +157,21 @@ footer {
   &::placeholder {
     color: var(--adress-footer-color);
   }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
 
 .subscription__btn {
   @extend %button;
 
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
