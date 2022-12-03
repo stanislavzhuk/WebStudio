@@ -1,6 +1,11 @@
 .work {
+  display: none;
   @include section;
   background-color: var(--primari-white-color);
+
+  @media screen and (min-width: 1200px) {
+      display: block;
+    }
 }
 
 .work__item {
