@@ -1,9 +1,14 @@
 .customers{
   @include section;
+
+  @media screen and (min-width: 1200px) {
+      @include section(94px, 94px);
+    }
 }
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -13,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   border: 1px solid var(--main-svg-color);
@@ -26,6 +31,14 @@
   &:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
