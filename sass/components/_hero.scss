@@ -1,34 +1,78 @@
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  @include section(200px, 200px);
+  @include section(118px, 118px);
+
+  @media screen and (min-width: 1200px) {
+    @include section(200px, 200px);
+  }
   
   background-color: var(--hero-bgc);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bgi.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   text-align: center;
+
+  // phone screen
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/hero/bg_sm@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), url('../images/hero/bg_sm@2x.jpg');
+    }
+
+  // tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),url('../images/hero/bg_md@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),url('../images/hero/bg_md@2x.jpg');
+    }
+  }
+
+  // desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url('../images/hero/bg_md@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), url('../images/hero/bg_md@2x.jpg');
+    }
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--primari-white-color);
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__btn {
   @extend %button;
 
-  padding: 10px 32px;
+  padding: 10px 24px;
 }

@@ -8,10 +8,17 @@
 
 .customers__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+}
+
+.customers__item {
+  @media screen and (max-width: 767px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
 }
 
 .customers__link {
