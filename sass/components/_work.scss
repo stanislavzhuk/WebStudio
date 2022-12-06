@@ -1,12 +1,15 @@
 .work {
   display: none;
+
   @include section;
-  background-color: var(--primari-white-color);
 
   @media screen and (min-width: 1200px) {
       display: block;
+      
       @include section(94px, 94px);
     }
+
+  background-color: var(--primari-white-color);
 }
 
 .work__item {
