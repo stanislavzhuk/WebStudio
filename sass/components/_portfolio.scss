@@ -20,7 +20,13 @@
 
 .project__filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+    
   gap: 8px;
 
   margin-bottom: 50px;
