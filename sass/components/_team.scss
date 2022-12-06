@@ -1,5 +1,9 @@
 .team {
   @include section;
+
+  @media screen and (min-width: 1200px) {
+      @include section(94px, 94px);
+    }
   
   background-color: var(--bgd-white-color);
 
@@ -7,7 +11,13 @@
 }
 
 .team__list {
-  --items: 4;
+  --items: 1;
+  @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+  @media screen and (min-width: 1200px) {
+      --items: 4;
+    }
 }
 
 .team__member {
@@ -19,7 +29,11 @@
 
 .member__description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
 }
 
 .member__title {
@@ -27,14 +41,14 @@
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
 }
 
 .member__text {
   margin-bottom: 16px;
 
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
 
   color: var(--secondary-text-color);
 }
