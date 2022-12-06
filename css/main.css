@@ -840,6 +840,12 @@ footer {
   padding-bottom: 60px;
   background-color: var(--primari-white-color);
 }
+@media screen and (min-width: 1200px) {
+  .portfolio__project {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .project__filter {
   display: -webkit-box;
@@ -873,6 +879,20 @@ footer {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.project__list {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .project__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__list {
+    --items: 3;
+  }
+}
+
 .project__link {
   -webkit-transition: -webkit-box-shadow var(--anim-fast);
   transition: -webkit-box-shadow var(--anim-fast);
@@ -902,7 +922,7 @@ footer {
 
 .description__text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   color: var(--secondary-text-color);
 }
 

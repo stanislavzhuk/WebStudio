@@ -9,6 +9,10 @@
 .portfolio__project {
   @include section;
 
+  @media screen and (min-width: 1200px) {
+      @include section(94px, 94px);
+    }
+
   background-color: var(--primari-white-color);
 }
 
@@ -49,6 +53,18 @@
 
 // Projects
 
+.project__list {
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
+}
+
 .project__link {
   transition: box-shadow var(--anim-fast);
 
@@ -72,7 +88,7 @@
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
 
   letter-spacing: 0.06em;
 
@@ -81,7 +97,7 @@
 
 .description__text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: calc(30 / 16);
 
   color: var(--secondary-text-color);
 }
