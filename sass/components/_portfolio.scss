@@ -21,7 +21,6 @@
 .project__filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
 
   @media screen and (min-width: 768px) {
       justify-content: center;
@@ -56,6 +55,10 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
+// .filter__item:first-child .filter__btn {
+//   padding: 6px 25px;
+// }
 
 // Projects
 

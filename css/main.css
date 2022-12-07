@@ -854,9 +854,6 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   gap: 8px;
   margin-bottom: 50px;
 }
