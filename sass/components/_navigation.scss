@@ -6,8 +6,11 @@
 
 .nav__list {
   display: none;
-  // display: flex;
-  // align-items: center;
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
 }
 
 .nav__item:not(:last-child) {
