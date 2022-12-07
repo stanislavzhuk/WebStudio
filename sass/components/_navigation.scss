@@ -1,8 +1,13 @@
 .header__nav,
-.nav,
-.nav__list {
+.nav {
   display: flex;
   align-items: center;
+}
+
+.nav__list {
+  display: none;
+  // display: flex;
+  // align-items: center;
 }
 
 .nav__item:not(:last-child) {
