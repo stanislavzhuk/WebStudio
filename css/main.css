@@ -377,25 +377,25 @@ header {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg_sm@2x.jpg");
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg_md@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg_md@1x.jpg");
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg_md@2x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg_md@2x.jpg");
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg_lg@1x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg_lg@1x.jpg");
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/bg_lg@2x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg_lg@2x.jpg");
@@ -681,7 +681,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid var(--main-svg-color);
   border-radius: 4px;
@@ -1081,8 +1081,8 @@ footer {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primari-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1091,6 +1091,12 @@ footer {
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: translate var(--anim-fast), scale var(--anim-fast);
   transition: translate var(--anim-fast), scale var(--anim-fast);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__btn--close {
@@ -1131,9 +1137,14 @@ footer {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--primari-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__label {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -1190,8 +1201,8 @@ footer {
   padding: 12px 16px;
   margin-bottom: 20px;
   resize: none;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1199,6 +1210,12 @@ footer {
   outline-offset: -1px;
   -webkit-transition: outline var(--anim-fast);
   transition: outline var(--anim-fast);
+}
+@media screen and (min-width: 1200px) {
+  .form__message {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 .form__message:hover, .form__message:focus {
   outline-color: var(--accent-color);
@@ -1229,8 +1246,13 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8.38px;
+  gap: 8px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .form__agreement {
+    gap: 8.38px;
+  }
 }
 
 .uncheck {
@@ -1254,12 +1276,19 @@ footer {
 }
 
 .agreement__desc {
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: var(--primari-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .agreement__desc {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .agreement__link {
@@ -1327,8 +1356,8 @@ footer {
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: var(--menu-idx);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(140%);
+          transform: translateX(140%);
   -webkit-transition: -webkit-transform var(--anim-fast);
   transition: -webkit-transform var(--anim-fast);
   transition: transform var(--anim-fast);
