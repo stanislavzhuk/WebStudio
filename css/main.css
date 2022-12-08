@@ -177,7 +177,15 @@ header {
   color: var(--logo-black-color);
 }
 
-.header__nav,
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +193,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    margin-right: auto;
+  }
 }
 
 .nav__list {
@@ -267,15 +280,31 @@ header {
 }
 
 .header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
-  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
@@ -287,11 +316,18 @@ header {
           align-items: center;
   gap: 10px;
   font-weight: 500;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
@@ -299,6 +335,20 @@ header {
 
 .contact__icons {
   fill: currentColor;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact__icons--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact__icons--tel {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .hero {
@@ -1259,6 +1309,13 @@ footer {
 }
 
 .menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -1286,6 +1343,10 @@ footer {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.menu__list--nav {
+  margin-bottom: auto;
 }
 
 .menu__item:not(:last-child) {

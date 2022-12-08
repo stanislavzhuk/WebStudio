@@ -1,11 +1,24 @@
 .header__contacts {
-  display: flex;
   display: none;
-  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
@@ -14,8 +27,14 @@
   gap: 10px;
 
   font-weight: 500;
-  line-height: calc(16 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 
   color: var(--secondary-text-color);
   transition: color var(--anim-fast);
@@ -28,4 +47,18 @@
 
 .contact__icons {
   fill: currentColor;
+}
+
+.contact__icons--mail {
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.contact__icons--tel {
+  @media screen and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
 }
