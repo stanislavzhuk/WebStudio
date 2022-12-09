@@ -997,8 +997,10 @@ footer {
   border-top: none;
 }
 
-.project__description--pb {
-  padding-bottom: 56px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__description--pb {
+    padding-bottom: 56px;
+  }
 }
 
 .description__title {
