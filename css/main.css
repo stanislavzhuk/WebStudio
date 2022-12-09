@@ -997,6 +997,10 @@ footer {
   border-top: none;
 }
 
+.project__description--pb {
+  padding-bottom: 56px;
+}
+
 .description__title {
   margin-bottom: 4px;
   font-weight: 700;
