@@ -57,7 +57,9 @@
 }
 
 // .filter__item:first-child .filter__btn {
-//   padding: 6px 25px;
+//   @media screen and (max-width: 767px) {
+//     padding: 6px 25px;
+//   }
 // }
 
 // Projects
