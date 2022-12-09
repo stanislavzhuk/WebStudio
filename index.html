@@ -139,22 +139,34 @@
 				<h2 class="section__title">Чим ми займаємося</h2>
 				<ul class="work__list list card__set">
 					<li class="work__item card__set-item">
-						<img class="work__img" srcset="./images/work/img_1_370.jpg 1x, ./images/work/img_1_740.jpg 2x"
-							src="./images/box1.jpg" alt="Приклад роботи команди студії" width="370" height="294" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/work/work_1@1x.jpg 1x, ./images/work/work_1@2x.jpg 2x" />
+							<img class="work__img" src="./images/box1.jpg" alt="Десктопні додатки" loading="lazy" width="370"
+								height="294" />
+						</picture>
 						<div class="work__overlay">
 							<p class="work__description">Десктопні додатки</p>
 						</div>
 					</li>
 					<li class="work__item card__set-item">
-						<img class="work__img" srcset="./images/work/img_2_370.jpg 1x, ./images/work/img_2_740.jpg 2x"
-							src="./images/box2.jpg" alt="Приклад роботи команди студії" width="370" height="294" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/work/work_2@1x.jpg 1x, ./images/work/work_2@2x.jpg 2x" />
+							<img class="work__img" src="./images/box2.jpg" alt="Мобільні додатки" loading="lazy" width="370"
+								height="294" />
+						</picture>
 						<div class="work__overlay">
 							<p class="work__description">Мобільні додатки</p>
 						</div>
 					</li>
 					<li class="work__item card__set-item">
-						<img class="work__img" srcset="./images/work/img_3_370.jpg 1x, ./images/work/img_3_740.jpg 2x"
-							src="./images/box3.jpg" alt="Приклад роботи команди студії" width="370" height="294" />
+						<picture>
+							<source media="(min-width: 1200px)"
+								srcset="./images/work/work_3@1x.jpg 1x, ./images/work/work_3@2x.jpg 2x" />
+							<img class="work__img" src="./images/box3.jpg" alt="Дизайнерські рішення" loading="lazy" width="370"
+								height="294" />
+						</picture>
 						<div class="work__overlay">
 							<p class="work__description">Дизайнерські рішення</p>
 						</div>
@@ -168,12 +180,18 @@
 				<h2 class="section__title">Наша команда</h2>
 				<ul class="team__list card__set list">
 					<li class="team__member card__set-item">
-						<img
-							srcset="./images/team/1-270.jpg 270w, ./images/team/1-354.jpg 354w, ./images/team/1-450.jpg 450w, ./images/team/1-540.jpg 540w, ./images/team/1-708.jpg 708w, ./images/team/1-900.jpg 900w,"
-							sizes="(min-width: 1200px) 270px, 
-           (min-width: 768px) 354px, 
-           (min-width: 480px) 450px, 100vw" src="./images/team-card-1.jpg" alt="фото співробітника" width="450"
-							height="460" />
+						<picture>
+							<!-- desktop screen -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/tm_1_sm@1x.jpg 1x, ./images/team/tm_1_sm@2x.jpg 2x" />
+							<!-- tablet screen -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/tm_1_md@1x.jpg 1x, ./images/team/tm_1_md@2x.jpg 2x" />
+							<!-- phone screen -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/tm_1_lg@1x.jpg 1x, ./images/team/tm_1_lg@2x.jpg 2x" />
+							<img src="./images/team/tm_1_lg@1x.jpg" alt="Ігор Дем'яненко" width="450" height="460" loading="lazy" />
+						</picture>
 						<div class="member__description">
 							<h3 class="member__title">Ігор Дем'яненко</h3>
 							<p class="member__text">Product Designer</p>
@@ -214,12 +232,18 @@
 						</div>
 					</li>
 					<li class="team__member card__set-item">
-						<img
-							srcset="./images/team/2-270.jpg 270w, ./images/team/2-354.jpg 354w, ./images/team/2-450.jpg 450w, ./images/team/2-540.jpg 540w, ./images/team/2-708.jpg 708w, ./images/team/2-900.jpg 900w,"
-							sizes="(min-width: 1200px) 270px, 
-						           (min-width: 768px) 354px, 
-						           (min-width: 480px) 450px, 100vw" src="./images/team-card-2.jpg" alt="фото співробітника" width="450"
-							height="460" />
+						<picture>
+							<!-- desktop screen -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/tm_2_sm@1x.jpg 1x, ./images/team/tm_2_sm@2x.jpg 2x" />
+							<!-- tablet screen -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/tm_2_md@1x.jpg 1x, ./images/team/tm_2_md@2x.jpg 2x" />
+							<!-- phone screen -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/tm_2_lg@1x.jpg 1x, ./images/team/tm_2_lg@2x.jpg 2x" />
+							<img src="./images/team/tm_2_lg@1x.jpg" alt="Ольга Рєпіна" width="450" height="460" loading="lazy" />
+						</picture>
 						<div class="member__description">
 							<h3 class="member__title">Ольга Рєпіна</h3>
 							<p class="member__text">Frontend Developer</p>
@@ -260,12 +284,18 @@
 						</div>
 					</li>
 					<li class="team__member card__set-item">
-						<img
-							srcset="./images/team/3-270.jpg 270w, ./images/team/3-354.jpg 354w, ./images/team/3-450.jpg 450w, ./images/team/3-540.jpg 540w, ./images/team/3-708.jpg 708w, ./images/team/3-900.jpg 900w,"
-							sizes="(min-width: 1200px) 270px, 
-												           (min-width: 768px) 354px, 
-												           (min-width: 480px) 450px, 100vw" src="./images/team-card-3.jpg" alt="фото співробітника"
-							width="450" height="460" />
+						<picture>
+							<!-- desktop screen -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/tm_3_sm@1x.jpg 1x, ./images/team/tm_3_sm@2x.jpg 2x" />
+							<!-- tablet screen -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/tm_3_md@1x.jpg 1x, ./images/team/tm_3_md@2x.jpg 2x" />
+							<!-- phone screen -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/tm_3_lg@1x.jpg 1x, ./images/team/tm_3_lg@2x.jpg 2x" />
+							<img src="./images/team/tm_3_lg@1x.jpg" alt="Микола Тарасов" width="450" height="460" loading="lazy" />
+						</picture>
 						<div class="member__description">
 							<h3 class="member__title">Микола Тарасов</h3>
 							<p class="member__text">Marketing</p>
@@ -306,12 +336,18 @@
 						</div>
 					</li>
 					<li class="team__member card__set-item">
-						<img
-							srcset="./images/team/4-270.jpg 270w, ./images/team/4-354.jpg 354w, ./images/team/4-450.jpg 450w, ./images/team/4-540.jpg 540w, ./images/team/4-708.jpg 708w, ./images/team/4-900.jpg 900w,"
-							sizes="(min-width: 1200px) 270px, 
-												           (min-width: 768px) 354px, 
-												           (min-width: 480px) 450px, 100vw" src="./images/team-card-4.jpg" alt="фото співробітника"
-							width="450" height="460" />
+						<picture>
+							<!-- desktop screen -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/tm_4_sm@1x.jpg 1x, ./images/team/tm_4_sm@2x.jpg 2x" />
+							<!-- tablet screen -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/tm_4_md@1x.jpg 1x, ./images/team/tm_4_md@2x.jpg 2x" />
+							<!-- phone screen -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/tm_4_lg@1x.jpg 1x, ./images/team/tm_4_lg@2x.jpg 2x" />
+							<img src="./images/team/tm_4_lg@1x.jpg" alt="Михайло Єрмаков" width="450" height="460" loading="lazy" />
+						</picture>
 						<div class="member__description">
 							<h3 class="member__title">Михайло Єрмаков</h3>
 							<p class="member__text">UI Designer</p>
