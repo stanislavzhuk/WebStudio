@@ -65,16 +65,17 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: var(--accent-color);
+    transform: rotate(360deg);
+  }
 }
 
 .modal__icon {
   fill: var(--logo-black-color);
-  transition: fill var(--anim-fast);
-}
-
-.modal__btn--close:hover .modal__icon,
-.modal__btn--close:focus .modal__icon {
-  fill: var(--accent-color);
+  transition: fill var(--anim-fast), transform var(--anim-fast);
 }
 
 .modal__label {
