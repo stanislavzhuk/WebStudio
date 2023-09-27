@@ -976,6 +976,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .project__list {
     --items: 3;
+    min-height: 1275px;
   }
 }
 
@@ -1126,16 +1127,18 @@ footer {
   border-radius: 50%;
   cursor: pointer;
 }
+.modal__btn--close:hover .modal__icon, .modal__btn--close:focus .modal__icon {
+  fill: var(--accent-color);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
 .modal__icon {
   fill: var(--logo-black-color);
-  -webkit-transition: fill var(--anim-fast);
-  transition: fill var(--anim-fast);
-}
-
-.modal__btn--close:hover .modal__icon,
-.modal__btn--close:focus .modal__icon {
-  fill: var(--accent-color);
+  -webkit-transition: fill var(--anim-fast), -webkit-transform var(--anim-fast);
+  transition: fill var(--anim-fast), -webkit-transform var(--anim-fast);
+  transition: fill var(--anim-fast), transform var(--anim-fast);
+  transition: fill var(--anim-fast), transform var(--anim-fast), -webkit-transform var(--anim-fast);
 }
 
 .modal__label {
@@ -1242,25 +1245,6 @@ footer {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .form__agreement {
-    gap: 8.38px;
-  }
-}
-
 .uncheck {
   opacity: 1;
   -webkit-transition: opacity var(--anim-fast);
@@ -1282,6 +1266,17 @@ footer {
 }
 
 .agreement__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.1666666667;
   -webkit-user-select: none;

@@ -69,7 +69,7 @@
   &:hover .modal__icon,
   &:focus .modal__icon {
     fill: var(--accent-color);
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 
@@ -181,18 +181,6 @@
   }
 }
 
-.form__agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    gap: 8.38px;
-  }
-}
-
 .uncheck {
   opacity: 1;
   transition: opacity var(--anim-fast);
@@ -212,9 +200,15 @@
 }
 
 .agreement__desc {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+	
   font-size: 12px;
   line-height: calc(14 / 12);
-
+	
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(24 / 14);
